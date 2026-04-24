@@ -1,0 +1,91 @@
+/* UI DESIGN — DARK LUXURY ANALYTICS THEME */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Syne:wght@600;700;800&display=swap');
+
+:root {
+    --bg-color: #0A0E1A;
+    --surface-color: #111827;
+    --sidebar-color: #0F1629;
+    --primary-accent: #00D4AA;
+    --secondary-accent: #F59E0B;
+    --danger: #F43F5E;
+    --success: #10B981;
+    --text-color: #e2e8f0;
+}
+
+[data-testid="stAppViewContainer"] {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: 'DM Sans', sans-serif;
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+[data-testid="stSidebar"] {
+    background-color: var(--sidebar-color);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Syne', sans-serif !important;
+}
+
+::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
+}
+::-webkit-scrollbar-track {
+    background: var(--bg-color);
+}
+::-webkit-scrollbar-thumb {
+    background: var(--primary-accent);
+    border-radius: 4px;
+}
+
+[data-testid="stHeader"] {
+    background: linear-gradient(90deg, #0A0E1A, #0F1629, #00D4AA, #0F1629, #0A0E1A);
+    background-size: 400% 400%;
+    animation: gradientMove 10s ease infinite;
+    height: 4px;
+}
+
+div[data-testid="stMetric"] {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(0, 212, 170, 0.2);
+    border-radius: 12px;
+    padding: 1rem;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes gradientMove {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.stButton>button {
+    background-color: var(--surface-color);
+    color: var(--primary-accent);
+    border: 1px solid var(--primary-accent);
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+.stButton>button:hover {
+    background-color: var(--primary-accent);
+    color: var(--bg-color);
+}
+
+.insight-card {
+    background: var(--surface-color);
+    border-left: 4px solid var(--primary-accent);
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 4px;
+    color: #e2e8f0;
+}
+.insight-card.positive { border-left-color: var(--success); }
+.insight-card.negative { border-left-color: var(--danger); }
+.insight-card.neutral { border-left-color: var(--secondary-accent); }

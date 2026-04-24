@@ -1,7 +1,7 @@
 # RetailPulse — Dynamic Sales Intelligence Dashboard
 
 ## Live Demo
-[Streamlit Cloud URL]
+["https://forelytics-4xdipvspkmlnage8eeeaiz.streamlit.app/"]
 
 ## What it does
 One paragraph: upload ANY CSV with sales/transactional data and instantly get

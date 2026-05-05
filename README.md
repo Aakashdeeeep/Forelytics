@@ -1,4 +1,4 @@
-# RetailPulse — Dynamic Sales Intelligence Dashboard
+# Forelytics — Dynamic Sales Intelligence Dashboard
 
 ## Live Demo
 ["https://forelytics-4xdipvspkmlnage8eeeaiz.streamlit.app/"]
